@@ -11,7 +11,7 @@ the implementation of the pitch clock. I used a few different tests to assess th
 in pitcher tempo and performance from the pre-clock and clock eras and will use this to assess how the clock 
 has affected pitchers.
 
-Baseball Savant tracks pitcher's pace with a metric called tempo. Tempo is measured by the median seconds a pitcher
+Baseball Savant tracks pitchers' pace with a metric called tempo. Tempo is measured by the median seconds a pitcher
 takes between pitches while the bases are empty. Using data from Baseball Savant, I compiled pitch clock data and 
 performance metrics from 2015 through 2023, excluding the Covid shortened 2020 season. I also calculated the 
 difference in Earned Run Average (ERA), strikeout percentage, and tempo and included those in my dataset.
@@ -22,10 +22,16 @@ had strong correlations as indicated by their correlation coefficients of -.1383
 there was no correlation between a change in tempo and a change in ERA or strikeout percentage between the 2022
 and 2023 seasons. 
 
+![era v tempo final](https://github.com/nathanaelrorie/senior-project/assets/129222776/d721dba4-6d90-464b-8eb2-ab18368bfb96)
+![k v tempo final](https://github.com/nathanaelrorie/senior-project/assets/129222776/47a8a73d-7af6-49a9-be50-bd64bf1b4f20)
+
 In an effort to validate my results from the linear model, I next performed a bootstrap test. I simulated 3000 test 
 statistics, which was significantly more than the number of events in my linear model. I graphed my statistics from 
 the bootstrap tests, and the results were as expected. The actual median from both distributions fell right in the 
 middle of my simulated distributions. Thus, we can expect our results to occur repeatedly. 
+
+![2023 bootstrap final](https://github.com/nathanaelrorie/senior-project/assets/129222776/df1f7ffe-53e0-453b-97d5-871c254fdd24)
+![diff bootstrap final](https://github.com/nathanaelrorie/senior-project/assets/129222776/dcbe08c2-7e83-422f-a959-b02b65ad2739)
 
 To further validate my initial results, I conducted a permutation test. My null hypothesis was that the tempos from 2022 
 and 2023 were the same, my alternate hypothesis was that the tempos from 2022 and 2023 were different. I took all the 
@@ -34,6 +40,8 @@ the second half and calculated the difference between the two for the tempo diff
 and graphed the distribution of the simulated statistics. The result was that the actual median tempo difference from 2022 
 to 2023 was substantially outside of the 95% confidence interval. Thus, we reject the null hypothesis that the tempos from 
 2022 and 2023 are the same. This is what we expected to see with the results of our previous tests.
+
+![perm test final](https://github.com/nathanaelrorie/senior-project/assets/129222776/2593cf04-9ee9-48ec-b394-20fac65eed08)
 
 In conclusion, the implementation of the pitch clock was a very controversial event that received push back from several
 pitchers. However, it did not have a statistically significant impact on the performance of pitchers across MLB. There are 
