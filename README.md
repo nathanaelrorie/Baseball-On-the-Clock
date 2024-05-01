@@ -22,6 +22,9 @@ had strong correlations as indicated by their correlation coefficients of -.1383
 there was no correlation between a change in tempo and a change in ERA or strikeout percentage between the 2022
 and 2023 seasons. 
 
+*You can use the interactive visualization in the notebook to experiment with the correlations between different 
+variables in the dataset.* 
+
 ![era v tempo final](https://github.com/nathanaelrorie/senior-project/assets/129222776/d721dba4-6d90-464b-8eb2-ab18368bfb96)
 ![k v tempo final](https://github.com/nathanaelrorie/senior-project/assets/129222776/47a8a73d-7af6-49a9-be50-bd64bf1b4f20)
 
