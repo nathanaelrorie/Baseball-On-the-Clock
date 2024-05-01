@@ -48,3 +48,8 @@ pitchers. However, it did not have a statistically significant impact on the per
 a few performance outliers in the dataset that could have been attributed to the clock, but with a large enough population,
 they were not impactful. With the benefits of the pitch clock on pace of play already well documented, the implementation 
 in 2023 appears to have little negative effect on the game from a pitcher performance perspective.
+
+
+***Note*** There are several code blocks toward the end of the notebook that seemingly don't create anything. I am in the 
+process of working on a dashboard, but have yet to get all the pieces together. Feel free to try and put them together
+yourself or to create your own dashboard with the data.
